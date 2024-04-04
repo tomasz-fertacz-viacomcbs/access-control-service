@@ -1,3 +1,3 @@
 export async function GET() {
-    return {test: 'test'};
+    return Response.json({test: 'test'});
 }
