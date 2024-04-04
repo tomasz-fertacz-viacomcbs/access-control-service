@@ -1,3 +1,4 @@
-export async function GET() {
+export async function POST() {
+    const ok = new Response()
     return Response.json({test: 'test'});
 }
