@@ -1,6 +1,4 @@
-import {NextApiRequest, NextApiResponse} from "next";
-
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST() {
     return {test: 'test'};
     return Response.json({test: 'test'});
 }
