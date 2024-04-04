@@ -1,4 +1,6 @@
-export async function POST() {
-    const ok = new Response()
-    return Response.json({test: Math.random()});
+import {NextRequest, NextResponse} from "next/server";
+
+export async function POST(req: NextRequest) {
+    console.log('req', req.body);
+    return NextResponse.json({test: req.body});
 }
