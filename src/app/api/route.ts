@@ -1,3 +1,5 @@
-export async function GET() {
-    return Response.json({test: 'test'});
+import {NextApiRequest, NextApiResponse} from "next";
+
+export async function GET(req: NextApiRequest, res: NextApiResponse) {
+    return res.json({test: 'test'});
 }
