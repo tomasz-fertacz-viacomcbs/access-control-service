@@ -1,6 +1,6 @@
 import {NextApiRequest, NextApiResponse} from "next";
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
     const ok = res.json({test: 'test'});
     res.json({test: 'test'});
 }
