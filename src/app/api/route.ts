@@ -1,4 +1,4 @@
-export async function POST() {
+export async function GET() {
     const ok = new Response()
-    return Response.json({test: 'test'});
+    return Response.json({test: Math.random()});
 }
